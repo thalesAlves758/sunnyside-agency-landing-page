@@ -13,6 +13,10 @@ body {
   font-weight: 600;
 }
 
+.container {
+  min-height: 100vh;
+}
+
 .mobile-image, .mobile-nav-menu-container {
   display: none;
 }
