@@ -1,0 +1,56 @@
+section {
+  display: flex;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  article {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    .article-image {
+      width: 100%;
+    }
+    
+    .article-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      max-width: 52%;
+
+      h2 {
+        @include fontFraunces();
+        font-size: 1.6rem;
+        font-weight: 900;
+        line-height: 2rem;
+      }
+
+      p {
+        line-height: 1.3rem;
+        font-size: .9rem;
+      }
+
+      .article-link {
+        @include fontFraunces();
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: underline;
+        font-size: .8rem;
+      }
+    }
+
+    .article-image + .article-content {
+      height: 50%;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+}
