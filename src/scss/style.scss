@@ -1,22 +1,7 @@
-@import "./reset.scss";
+@import "utils/variables";
+@import "utils/mixins";
 
-:root {
-  font-size: 18px;
-}
+@import "base/reset";
+@import "base/base";
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Barlow", sans-serif;
-  font-weight: 600;
-}
-
-.container {
-  min-height: 100vh;
-}
-
-.mobile-image, .mobile-nav-menu-container {
-  display: none;
-}
+@import "layout/header";
