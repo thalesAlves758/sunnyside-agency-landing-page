@@ -1,0 +1,7 @@
+@mixin fontFraunces() {
+  font-family: "Fraunces", system-ui;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
