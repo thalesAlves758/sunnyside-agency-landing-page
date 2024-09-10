@@ -30,6 +30,15 @@ header {
       background-color: $color-white;
       border-radius: 50px;
       margin: 0 .8rem;
+      cursor: pointer;
+
+      &:active {
+        background-color: transparentize($color: $color-white, $amount: 0.7);
+
+        a {
+          color: $color-white;
+        }
+      }
 
       a {
         color: black;
