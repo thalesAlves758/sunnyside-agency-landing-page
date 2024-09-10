@@ -83,6 +83,10 @@ section {
         &.soft-red::after {
           background-color: $color-soft-red;
         }
+
+        &:active::after {
+          opacity: 1;
+        }
       }
     }
 
