@@ -22,6 +22,10 @@ footer {
 
         a {
           color: transparentize($color: $color-graphic-design-text, $amount: .3);
+
+          &:active {
+            color: $color-white;
+          }
         }
       }
     }
@@ -30,6 +34,14 @@ footer {
       margin-top: 3.4rem;
       display: flex;
       gap: 1.8rem;
+
+      img {
+        cursor: pointer;
+
+        &:active {
+          filter: brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(27%) hue-rotate(78deg) brightness(106%) contrast(108%);
+        }
+      }
     }
 
     img {
@@ -45,5 +57,10 @@ footer {
     display: flex;
     align-items: center;
     padding: .5rem 0;
+
+    a {
+      color: $color-graphic-design-text;
+      font-weight: 700;
+    }
   }
 }
