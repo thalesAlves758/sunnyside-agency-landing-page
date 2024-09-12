@@ -26,6 +26,18 @@ nav {
   min-height: 100vh;
 }
 
-.mobile-image, .mobile-nav-menu-container {
+.mobile-image,
+.mobile-nav-menu-container,
+.mobile-nav-menu {
   display: none;
+}
+
+@media (max-width: $large-mobile-width) {
+  .mobile-image {
+    display: initial;
+  }
+
+  .desktop-image {
+    display: none;
+  }
 }

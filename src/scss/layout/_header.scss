@@ -60,3 +60,49 @@ header {
     width: 1.8rem;
   }
 }
+
+@media (max-width: 789px) {
+  header {
+    .page-title {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+@media (max-width: $pre-large-mobile-width) {
+  header {
+    .page-title {
+      font-size: 2rem;
+    }
+
+    nav {
+      li:not(.main-nav-item) {
+        padding: 1rem .6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $large-mobile-width) {
+  header {
+    background-image: url("../images/mobile/image-header.jpg");
+
+    .desktop-nav-items {
+      display: none;
+    }
+
+    .page-title {
+      font-size: 2rem;
+    }
+
+    nav {
+      li:not(.main-nav-item) {
+        padding: 1rem .6rem;
+      }
+    }
+  }
+
+  .mobile-nav-menu-container {
+    display: initial;
+  }
+}
