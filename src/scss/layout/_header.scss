@@ -6,6 +6,7 @@ header {
   background-size: cover;
   background-position: bottom;
   padding: 1.2rem 1.6rem;
+  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -58,6 +59,48 @@ header {
 
   .icon-arrow-down {
     width: 1.8rem;
+  }
+}
+
+.mobile-nav-menu {
+  position: absolute;
+  width: calc(100% - 2 * 1.6rem);
+  top: 5.5rem;
+  left: 1.6rem;
+  background-color: $color-white;
+  padding: 2rem;
+
+  .mobile-nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    position: relative;
+    
+    a {
+      color: $color-paragraph;
+    }
+
+    .main-nav-item {
+      @include fontFraunces();
+      background-color: $color-yellow;
+      border-radius: 50px;
+
+      a {
+        color: black;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    border-width: 1rem;
+    border-style: solid;
+    border-color: transparent $color-white $color-white transparent;
   }
 }
 
