@@ -70,6 +70,10 @@ header {
   background-color: $color-white;
   padding: 2rem;
 
+  &.hidden {
+    display: none;
+  }
+
   .mobile-nav-items {
     display: flex;
     flex-direction: column;
