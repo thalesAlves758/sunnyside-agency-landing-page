@@ -64,3 +64,24 @@ footer {
     }
   }
 }
+
+@media (max-width: $large-mobile-width) {
+  footer .footer-content {
+    width: 100%;
+
+    nav {
+      width: 100%;
+    }
+
+    .footer-nav ul {
+      width: 100%;
+      gap: 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .logo {
+      width: 6rem;
+    }
+  }
+}
