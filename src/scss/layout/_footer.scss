@@ -58,9 +58,13 @@ footer {
     align-items: center;
     padding: .5rem 0;
 
-    a {
-      color: $color-graphic-design-text;
-      font-weight: 700;
+    .attribution {
+      font-size: .65rem;
+
+      a {
+        color: $color-graphic-design-text;
+        font-weight: 700;
+      }
     }
   }
 }
